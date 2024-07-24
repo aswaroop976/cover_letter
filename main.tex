@@ -1,0 +1,107 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+
+% EDIT info.tex, body.tex
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+% \usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+\input{info}
+
+\begin{document}
+
+% Shaded header banner
+%\AddToShipoutPictureBG{%
+%\color{gr}
+%\AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+%}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]}
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+\href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin}\hfill
+\href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{-0.1in}\recipient\\
+\company\\
+\street\\
+\city, \state\ \zip\\
+
+\vspace{-0.1in}\greeting\ \recipient,\\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent\input{body}
+
+{\textbf{Unix Like 32-bit x86 Operating System} $|$ \emph{C, x86 asm}}{}
+\\
+Architected a minimalistic multitasking operating system for x86 hardware, prioritizing efficiency and reliability. We devised an interrupt-driven, time-slice-based CPU scheduling algorithm to schedule process execution. We also added functionality for up to 3 different terminals running a custom shell program, with support for simultaneous processes with the round robin process scheuduling policy.
+Supported virtual memory using paging data-structures. Developed a custom writable filesystem, following the ext32 format, that supports basic file operations, utilizing storage, and I/O principles.
+To allow processes to run we also implemented multiple system calls, such as Execute, Halt, and Vidmap. 
+Implemented device drivers for the keyboard, Real Time Clock, Programmable Interrupt Controller, and Programmable Interval Timer.
+
+{\textbf{Game Developer's toolkit} $|$ \emph{Javascript, HTML, CSS, Node.js, Express, MySQL, Python}}{}
+\\
+Developed full-stack web application using a steam game database to help game developers. This database had multiple data points on thousands of pc games available in the steam shop.
+Implemented multiple complex queries to the database to output useful information for game developers. One such query was searching for free games with a metacritic score higher than than the average metacritic score of all free games. Implemented CRUD functionality with a user sign up feature, the ability to add other users as friends, and the ability to update the metacritic scores for games.  
+Implemented interactive graphs in Python, showing helpful patterns in game data across all steam games. This included a box plot to show the sales numbers distribution of action games, where the data are grouped by secondary genre to compare the sales numbers of each genre combination
+Utilized a REST API made with Node.js and Express. Hosted website on the Google Cloud Platform
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+\closer,
+
+%\vspace{-0.1in}\includegraphics[width=1.5in]{sig.png}\vspace{-0.1in}
+
+\myname\\
+\mytitle
+\end{flushright}
+
+\end{document}

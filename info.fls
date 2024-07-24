@@ -1,0 +1,7 @@
+PWD /home/arpanswaroop/Documents/cover_letter
+INPUT /var/lib/texmf/web2c/luahbtex/lualatex.fmt
+INPUT ./info.tex
+OUTPUT info.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ltluatex.lua
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.lua
