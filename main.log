@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.6.1)  24 JUL 2024 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.6.1)  9 NOV 2024 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,13 +289,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
  []
 
 (./body.tex)
+./main.tex:80: Undefined control sequence.
+l.80 \section
+             *{Projects}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 80.
+(Font)              <12> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 80.
+(Font)              <8> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 80.
- [1
+(Font)              <6> on input line 84.
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -304,13 +313,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  8789 strings out of 480247
  137841 string characters out of 5896152
- 429138 words of memory out of 5000000
+ 430138 words of memory out of 5000000
  26622 multiletter control sequences out of 15000+600000
  481208 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,5n,63p,617b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (2 pages, 54322 bytes).
+Output written on main.pdf (2 pages, 56807 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
